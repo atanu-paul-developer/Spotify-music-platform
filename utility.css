@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.main_part {
+    height: calc(100% - 20%);
+    background-color: black;
+    display: flex;
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.invert {
+    filter: invert(1);
+}
+

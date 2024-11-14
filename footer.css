@@ -1,0 +1,119 @@
+.footer {
+    height: 20%;
+    background-color: black;
+    display: flex;
+}
+
+/* the footer portion where the name and pic of the song is visible */
+
+.song_identity {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    color: white;
+    margin-top: 8px;
+}
+
+.song_identity .image_of_song .final_pic {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    margin: 8px 12px 0px 10px;
+}
+
+#song_name {
+    font-size: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#artist {
+    font-size: 8px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.song_identity i {
+    margin: 18px 0px 0px 10px;
+    cursor: pointer;
+}
+
+/* middle part of the footer */
+
+.music_playbar {
+    height: 100%;
+    width: 50%;
+}
+
+.music_playbar div i {
+    margin: 0px 12px;
+    color: white;
+    cursor: pointer;
+}
+
+.music_playbar .upperpartofplayber {
+    text-align: center;
+    margin: 10px 0px 5px 0px;
+}
+
+
+.music_playbar .songcontroller {
+    text-align: center;
+}
+
+/* .music_playbar .songcontroller input {
+    height: 3px;
+    width: 50%;
+    border-radius: 0px;
+} */
+
+.playbar-container {
+    background-color: #ddd;
+    cursor: pointer;
+    position: relative;
+    height: 5px;
+    width: 60%;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 6px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 5px;
+    width: 0;
+}
+
+
+/* right part of the footer */
+.controller {
+    height: 50%;
+    width: 30%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.volume-slider-con{
+    cursor: pointer;
+    margin-left: 5px;
+    height: 5px;
+    width: 50%;
+    position:relative;
+    background-color:#ddd;
+    border-radius: 5px;
+  } 
+
+.volume-slider{
+    height:100%;
+    width:100%;
+    position:relative;
+    background-color: #4caf50;
+    border-radius: 5px;
+}

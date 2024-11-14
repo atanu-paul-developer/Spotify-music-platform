@@ -1,0 +1,65 @@
+.right_side {
+    height: 100%;
+    width:75%;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+    margin: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.right_side::-webkit-scrollbar {
+    display: none;
+}
+
+.right_side::-webkit-scrollbar {
+    display: block;
+    background-color: #2a2a2a;
+}
+
+.right_side::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.285);
+    border-radius: 50px;
+    height: 0px;
+}
+h2 {
+    color: white;
+    padding: 15px;
+    padding-left: 18px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.card {
+    height: 135px;
+    width: 104px;
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    transition: background-color 2s;
+}
+ 
+.card .name {
+    color: white;
+    font-size: 12px;
+}
+
+.card .artist {
+    color: white;
+    font-size: 8px;
+    opacity: 0.8;
+}
+
+.card:hover {
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.153));
+}
+
+.list_of_songs {
+    display: flex;
+}
+
+.song img {
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+}

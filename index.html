@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="32x32" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="left_body.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="right_body.css">
+    <link rel="stylesheet" href="play-bar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- this is the navbar of the spotify -->
+        <div class="nav_bar">
+            <img class="invert" src="logo.svg" alt="">
+            <form action="http://locahost:3000/spotify">
+                <div class="search">
+                    <img class="invert" src="home.svg" alt="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="What do you want to play?">
+                    <img class="invert" src="browse.svg" alt="">
+                </div>
+            </form>
+            <button type="submit" class="Sign">Sign Up</button>
+            <button type="submit" class="log">Log in</button>
+        </div> 
+        <!-- body of the spotify -->
+        <div class="main_part">
+            <!-- left portion -->
+            <div class="left_side">
+                <!-- left_top portion where the library portion is given -->
+                <div class="left_top">
+                    <label for="library">
+                        <img class="invert" src="library.svg" alt="">
+                    </label>
+                    <a id="library">Your library</a>
+                </div>
+                <!-- body of the left_portion where podcast and playlist section is present! -->
+                <div class="left_body">
+                    <div class="above_body">
+                        <p>create your first playlist</p>
+                        <p class="second">it's easy, we will help you</p>
+                        <button>Create playlist</button>
+                    </div>
+
+                    <div class="below_body">
+                        <p>Let's find some podcast to follow</p>
+                        <p class="second">We'll keep you updated on new episodes</p>
+                        <button>Browse podcasts</button>
+                    </div>
+                </div>
+                <!-- footer of the left portion where policies and languages are present !! -->
+                 <div class="left_footer">
+                    <div class="upper_footer">
+                        <a >Legal</a>
+                        <a >Safety & Privacy center</a>
+                        <a >Privacy Policy</a>
+                        <a >Cookies</a>
+                    </div>
+                    <br><br>
+                    <div class="middle_part">
+                        <a >About Ads</a>
+                        <a >Accessibility</a>
+                    </div>
+                    <br><br>
+                    <div class="below_footer">
+                        <a href="#" class="cookies">Cookies</a>
+                    </div>
+                    <form action="">
+                        <button><i class="fa-solid fa-language"></i>English</button>
+                    </form>
+                 </div>
+            </div>
+            <div class="right_side">
+                <!-- songs  -->
+                    <h2>Songs</h2>
+                    <div class="list_of_songs">
+                        <div class="card song one">
+                            <img class="pic_one" src="https://i.scdn.co/image/ab67616d0000b27372a77d038887cdc425f5ee55">
+                            <p class="name">JO TUM MERE HO</p>
+                            <P class="artist">Anuv Jain</P>
+                        </div>
+                        <div class="card song two">
+                            <img class="pic_two" src="https://i.scdn.co/image/ab67616d00001e0254e544672baa16145d67612b">
+                            <p class="name">Kyn Faya Kyn</p>
+                            <P class="artist">A.R.Rahman</P>
+                        </div>
+                        <div class="card song three">
+                            <img class="pic_three" src="https://i.scdn.co/image/ab67616d00001e0265ce8c712e4fb894bc88461b">
+                            <p class="name">Desi Kalakar</p>
+                            <P class="artist">Honey singh</P>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="footer">
+            <!-- left-part of the footer -->
+            <div class="song_identity">
+                <div class="image_of_song">
+                    <img class="final_pic" src="https://i.scdn.co/image/ab67616d00001e0254e544672baa16145d67612b" alt="">
+                </div>
+                <div class="writer">
+                    <p id="song_name">Kyn Faya Kyn</p>
+                    <p id="artist">A.R.Rahman</p>
+                </div>
+                <p><i class="fa-solid fa-circle-plus"></i></p>
+            </div>
+            <!-- middle part of the footer -->
+            <div class="music_playbar">
+                <div class="upperpartofplayber">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step" id="backward"></i>
+                    <i class="fa-solid fa-play" id="play_btn" style="cursor: pointer;"></i>
+                    <i class="fa-solid fa-forward-step" id="forward"></i>
+                    <i class="fa-solid fa-repeat" id="repeatPlay"></i>
+                </div>
+                <div class="songcontroller">
+                    <audio src="songOne.mp3" controls style="display: none;"></audio>
+                    <div class="playbar-container">
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- right part of the footer -->
+            <div class="controller">
+                <div class="volume">
+                    <i class="fa-solid fa-volume-high" id="volSign"></i>
+                </div>
+                <div class="volume-slider-con">
+                    <div class="volume-slider"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+<!-- <i class="fa-solid fa-pause"></i> 'this is a pause icon' -->
